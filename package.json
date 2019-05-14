@@ -1,0 +1,33 @@
+{
+  "name": "vue-crx",
+  "version": "1.0.0",
+  "description": "使用Vue开发Chrome扩展插件的模板",
+  "scripts": {
+    "build": "webpack --progress",
+    "watch": "webpack --progress --watch"
+  },
+  "author": "No.96",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^2.0.2",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.4",
+    "vue": "^2.6.10"
+  }
+}

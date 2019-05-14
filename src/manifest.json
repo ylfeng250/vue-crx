@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "Vue-crx 模板",
+    "version": "1.0.0",
+    "description": "1119030015@qq.com",
+    "icons": {
+        "16":"static/img/icon.png",
+        "19":"static/img/icon.png",
+        "38":"static/img/icon.png",
+        "48": "static/img/icon.png",
+		"128": "static/img/icon.png"
+    },
+    "browser_action":
+    {
+        "default_icon": "static/img/icon.png",
+        "default_title": "Vue-crx 模板",
+        "default_popup": "popup.html"
+    },
+    "options_page": "option.html",
+    "background":
+    {
+        "persistent": false,
+        "scripts": ["background.main.js"]
+    },
+    "content_scripts": [
+    {
+        "matches": ["https://*.baidu.com/*", "http://*.baidu.com/*"],
+        "js": ["content.main.js"],
+        "run_at": "document_end"
+    }],
+    "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+    ]
+}
