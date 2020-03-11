@@ -42,7 +42,7 @@ module.exports = {
         new CopyWebpackPlugin([
             {from:path.resolve(__dirname,'src/manifest.json'),to:''},
             {from:path.resolve(__dirname,'static/'), to:'static/'}
-        ])
+        ], {copyUnmodified: true})
     ],
     devtool: 'source-map',
     module:{

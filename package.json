@@ -4,7 +4,7 @@
   "description": "使用Vue开发Chrome扩展插件的模板",
   "scripts": {
     "build": "webpack --progress",
-    "watch": "webpack --progress --watch"
+    "watch": "webpack --progress --watch --mode=development"
   },
   "author": "No.96",
   "license": "ISC",
